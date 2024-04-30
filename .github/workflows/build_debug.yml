@@ -1,8 +1,8 @@
-name: Build Debug APK
+name: Build APK
 
 on:
   push:
-    branches: [ "beta" ]
+    branches: [ "24west-patch-6" ]
   workflow_dispatch:
 
 jobs:
