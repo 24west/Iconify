@@ -469,6 +469,13 @@ class LockscreenClock(context: Context?) : ModPack(context!!) {
         }
 
         when (clockStyle) {
+            1 -> {
+                val usernameView = clockView.findViewContainsTag("summary") as TextView?
+                usernameView?.text = userName
+                mBatteryLevelView = clockView.findViewContainsTag("battery_percentage") as TextView?
+                mBatteryProgress =
+                    clockView.findViewContainsTag("battery_progressbar") as ProgressBar?
+                }
             5 -> {
                 mBatteryStatusView = clockView.findViewContainsTag("battery_status") as TextView?
                 mBatteryLevelView = clockView.findViewContainsTag("battery_percentage") as TextView?
