@@ -2,9 +2,9 @@ name: Android CI
 
 on:
   push:
-    branches: [ "beta" ]
+    branches: [ "24west-patch-6" ]
   pull_request:
-    branches: [ "beta" ]
+    branches: [ "24west-patch-6" ]
 
 jobs:
   build:
