@@ -24,7 +24,7 @@
        android:fontFamily="@font/archive_regular"
        android:format12Hour="h:mm a"
        android:format24Hour="HH:mm a" />
-		 <TextClock android:textSize="34.0sp"
+		 <TextClock android:textSize="32.0sp"
        android:textColor="@android:color/white"
        android:layout_width="wrap_content"
        android:layout_height="wrap_content"
