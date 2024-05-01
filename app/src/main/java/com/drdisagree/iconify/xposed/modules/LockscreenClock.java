@@ -419,6 +419,13 @@ public class LockscreenClock extends ModPack implements IXposedHookLoadPackage {
         }
 
         switch (clockStyle) {
+            case 1 -> {
+                TextView usernameView = clockView.findViewById(R.id.summary);
+                usernameView.setText(getUserName());
+                mBatteryStatusView = clockView.findViewById(R.id.battery_status);
+                mBatteryLevelView = clockView.findViewById(R.id.battery_percentage);
+                mBatteryProgress = clockView.findViewById(R.id.battery_progressbar);
+            }
             case 5 -> {
                 mBatteryStatusView = clockView.findViewById(R.id.battery_status);
                 mBatteryLevelView = clockView.findViewById(R.id.battery_percentage);
